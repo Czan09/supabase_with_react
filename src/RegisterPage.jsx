@@ -54,8 +54,8 @@ export default function RegisterPage() {
 
     return (
         <div className="register-container bg-blue-500">
-            <form className='flex flex-col gap-4'>
-            <h2 className='p-6 text-center '
+            <form className='flex flex-col gap-4 justify-center-safe'>
+            <h1
                     type="text"
                     name="name"
                     placeholder="Full Name"
