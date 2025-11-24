@@ -18,7 +18,7 @@ export default function RegisterPage() {
             [name]: value,
         }));
     };
-
+    
     const handleFileChange = (e) => {
         setFormData(prev => ({
             ...prev,
@@ -49,13 +49,14 @@ export default function RegisterPage() {
 
         // Handle registration logic here
         setSuccess('Registration successful!');
-        console.log('Form data:', formData);
+        console.log('Form data:', formData);0
     };
 
     return (
-        <div className="register-container bg-blue-500">
-            <form className='flex flex-col gap-4 justify-center-safe'>
-            <h1
+        <div className="flex justify-center register-container mx-auto w-12/2">
+            <form className='flex justify-center-safe flex-col gap-8 '>
+                
+                <input
                     type="text"
                     name="name"
                     placeholder="Full Name"
